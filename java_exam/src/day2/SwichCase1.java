@@ -27,7 +27,7 @@ public class SwichCase1 {
 			System.out.println("");
 			break;
 		}
-			swich
+			
 		}
 
 	}

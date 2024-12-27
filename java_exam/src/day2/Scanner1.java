@@ -9,9 +9,9 @@ public class Scanner1 {
 		Scanner s = new Scanner(System.in);
 		System.out.print("이름을 입력하세요 : ");
 		// import 단축키 ctrl + shift + 알파벳 o
-		String name = scan.next // 문자열을 입력받을 수 있는 기능
+		String name = s.next() ;// 문자열을 입력받을 수 있는 기능
 		System.out.print("나이를 입력하세요 : ");
-		int age = scan.nextInt();// 숫자를 입력받을 수 있는 기능
+		int age = s.nextInt();// 숫자를 입력받을 수 있는 기능
 
 		System.out.println(name + "의 나이는" + age + "입니다");
 
