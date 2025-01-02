@@ -23,8 +23,10 @@ public class Human {
 	}
 	void intro2(String name) {
 		System.out.println(name+"의 나이는" +age + "주소는" + addr + "입니다.");
-		
-	}
+		System.out.println(name + "의 본명은" + this.name); // 객체에서 선언한 것 this.
+	}; 
+       	
+ 	
 
 
 }
