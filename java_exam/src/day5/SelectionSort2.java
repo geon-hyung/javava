@@ -9,7 +9,7 @@ public class SelectionSort2 {
 		for(int i=0; i<4; i++) {
 			for (int j =i+1; j<arr.length; j++) {
 				if(arr[j] < arr[min]) { // i 값과 min 을 비교해서 min = i 를 넣는다 . 
-					min= j;	                 //i값을 더하고 결국 민과 함께 증가하므로 i를 이용해서 숫자를 증가시킨다
+					min= j;	                 // i값을 더하고 결국 민과 함께 증가하므로 i를 이용해서 숫자를 증가시킨다
 				}
 			}
 			int temp = arr[min];    // 템프에 가장 작은수를 저장하
