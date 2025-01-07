@@ -5,7 +5,7 @@ public class Human {
 	int age;
 	String addr;
 
-	Human(String name, int age, String addr) {
+	Human(String name, int age, String addr) { 
 		this.name = name; // 이전에 name과 비교 되도록 this 를 사용해서 출력
 		this.age = age;
 		this.addr = addr;
