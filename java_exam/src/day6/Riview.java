@@ -24,7 +24,6 @@ public class Riview {
 			for(int j = 0; j<arr.length; j++) {
 			}
 		}
-		int temp = arr[i];
 		System.out.println(Arrays.toString(arr));
 	}
 
