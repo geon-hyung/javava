@@ -9,25 +9,20 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class MyFrame3 extends JFrame {
+public class MyFrame5 extends JFrame {
 
-	public MyFrame3() {
+	public MyFrame5() {
 		setTitle("첫번째 GUI");
 
 		Container c = getContentPane();
 		c.setBackground(Color.cyan);
-		// GridLayout
-		GridLayout grid = new GridLayout(4, 3);
-		grid.setVgap(5);
-		grid.setHgap(5);
-		c.setLayout(grid);
 
-		for (int i = 1; i <= 9; i++) {
-			c.add(new JButton(i + ""));
-		}
-		c.add(new JButton("+"));
-		c.add(new JButton("0"));
-		c.add(new JButton("="));
+		// 배치관리자 => null
+		c.setLayout(null);
+		JButton btn1 = new JButton("test");
+		btn1.setSize(60, 60);
+		btn1.setLocation(100, 150);
+		c.add(btn1);
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(300, 300);
@@ -36,7 +31,7 @@ public class MyFrame3 extends JFrame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		MyFrame3 gui = new MyFrame3();
+		MyFrame5 gui = new MyFrame5();
 	}
 
 }
