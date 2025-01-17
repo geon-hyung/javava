@@ -28,8 +28,7 @@ public class Map2 {
 			map.put("나이", age);
 			map.put("키", height);
 			list.add(map);
-
 		}
+		System.out.println(list);
 	}
-
 }

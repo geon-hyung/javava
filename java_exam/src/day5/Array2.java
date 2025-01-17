@@ -11,7 +11,7 @@ public class Array2 {
 //	  int sum = 0;
 		for  (int i = 0; i<arr.length; i++) {
 				for (int j = 0; j<arr[i] ; j++) {
-				System.out.println("*");
+				System.out.print("*");
 			}
 				System.out.println();
 	}

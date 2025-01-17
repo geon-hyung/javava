@@ -124,6 +124,8 @@ public class ListMap2 {
 					}
 				}
 			} else if (menu == 4) {
+				System.out.println("종료되었습니다");
+				break;
 				// 종료
 			} else {
 				// 다시시도
