@@ -13,20 +13,13 @@ public class Array {
 //		 - 조건2. 5의 배수는 넣지 말 것.
 		Scanner scan = new Scanner(System.in);
 		int arr[] = new int[6];
-		for(int i = 0; i < arr.length; i++) {
-			System.out.print((i+1) + "번째 숫자 입력 : ");
-			int input = scan.nextInt();
-			if(arr[i] > 1 || arr[i] < 100) {
-				arr[i] = input;
+		int num ;
+		for(int num = 0 ; num < 6 ;num++) {
+			
+		}
 				
-			} if(arr[i] % 5 ==0){
-				
-			}
-			arr[i] = input;
-			System.out.println(Arrays.toString(arr));
 			
 		
 
-	}
 	}
 }
