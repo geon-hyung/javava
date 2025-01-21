@@ -1,6 +1,6 @@
 package day17;
 
-public class RiviewArray {
+public class ReviewArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

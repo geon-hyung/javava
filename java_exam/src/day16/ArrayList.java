@@ -1,12 +1,11 @@
 package day16;
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class ArrayList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<HashMap<String, Object>> list = new ArrayList<>();
+		ArrayList list = new ArrayList<>();
 		Scanner scan = new Scanner(System.in);
 		int menu = scan.nextInt();
 		System.out.println("===학생관리 시스템입니다.===");
