@@ -14,24 +14,47 @@ public class Review_Array {
 		Scanner scan = new Scanner(System.in);
 		int arr[] = new int[6];
 		System.out.println("숫자:  ");
-		int num ;
-		boolean user = false;
-		for(int i=0; i<arr.length; i++) {
-			System.out.print((i+1) + "번째 숫자 입력 : ");
+		int count = 0;
+		while (count < 6) {
 			int input = scan.nextInt();
-			if(input > 1 && input < 100) {
-				arr[i] = input;
-			} else {
-				System.out.println("숫자를 다시 입력해주세요.");
-				i--;
-			}
-			for(int j = 1; j<arr.length; j++) {
-				if(arr[] == input) {
-					i--;
+			if (input >= 1 || input <= 100) {
+				boolean Flg = false;
+				for (int i = 0; i < count; i++) {
+					if (arr[i] == input) {
+						Flg = true;
+						break;
+					}
+				}
+				if (!Flg) {
+					arr[count] = input;
+					count++;
+				} else {
+					System.out.println("중복된 숫자입니다 ");
 				}
 			}
-			System.out.println(Arrays.toString(arr));
-				
+			for (int num : arr) {
+				System.out.print("입력된 숫자");
+				System.out.print(num + " ");
+			}
+
 		}
+//		for(int i = 0; i< arr.length; i ++) {
+//			System.out.print((i+1)+ "번째 숫자 입력 : ");
+//			arr[i] = scan.nextInt();
+//			if(arr[i] > 100 || arr[i] < 1) {
+//				System.out.println("1~100사이 값을 입력해주세요");
+//				i--;
+//				continue;
+//			}
+//			for(int j= 0; j<i ;j++ ) {
+//				if(arr[i] == arr[j]) {
+//					System.out.println("중복된 값 입니다 다시 입력하세요: ");
+//					i--;
+//					break;
+//				}
+//			}
+//			
+//		}
+//		System.out.println(Arrays.toString(arr));
 	}
 }

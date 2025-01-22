@@ -1,18 +1,22 @@
 package day18;
 
-public class Student {
-	private String name;
-	private int age;
+import java.util.ArrayList;
+
+public class Student extends Human {
 	private String num;
 
 	Student(String name, int age, String num) {
-		this.name = name;
-		this.age = age;
+		super(name, age);
 		this.num = num;
-	}
-	
 
-	String subjectList ;
-		
 	}
 
+	ArrayList<String> subjectList() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("자바");
+		list.add("오라클");
+		list.add("html");
+		return list;
+	}
+
+}

@@ -23,10 +23,14 @@ public class Review_HumanMain {
 		Student kim = new Student("김철수", 20, "20201234");
 		System.out.println(kim);
 		System.out.println("--------- 수강해야할 과목 ---------");
+		ArrayList <String> subjectList = kim.subjectList();
+		for(int i=0; i<subjectList.size(); i++) {
+			System.out.println(subjectList.get(i));
 //		ArrayList<String> subjectList = kim.subjectList();
 //		for(int i=0; i<subjectList.size(); i++) {
 //			System.out.println(subjectList.get(i));
 //		}
 	}
 
+}
 }
